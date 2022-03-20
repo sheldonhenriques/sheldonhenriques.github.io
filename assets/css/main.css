@@ -274,6 +274,10 @@ input, select, textarea {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
+	h1 {
+		font-size: 1.2em;
+	}
+
 	h2 {
 		font-size: 1.2em;
 	}
@@ -295,6 +299,10 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
+
+		h1 {
+			font-size: 1em;
+		}
 
 		h2 {
 			font-size: 1em;
@@ -3290,6 +3298,11 @@ input, select, textarea {
 			width: 18em;
 		}
 
+		#menu h1 {
+			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			padding-bottom: 1em;
+		}
+
 		#menu h2 {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 			padding-bottom: 1em;
@@ -3411,6 +3424,30 @@ input, select, textarea {
 				width: 2.25em;
 			}
 
+		#banner h1 {
+			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
+			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
+			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
+			transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			-moz-transition-delay: 0.65s;
+			-webkit-transition-delay: 0.65s;
+			-ms-transition-delay: 0.65s;
+			transition-delay: 0.65s;
+			-moz-filter: blur(0);
+			-webkit-filter: blur(0);
+			-ms-filter: blur(0);
+			filter: blur(0);
+			opacity: 1;
+			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			font-size: 2.25em;
+			margin-bottom: 0.8em;
+			padding-bottom: 0.4em;
+		}
+
 		#banner h2 {
 			-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
@@ -3481,6 +3518,11 @@ input, select, textarea {
 				height: 550px;
 			}
 			
+			#banner h1 {
+				position: absolute;
+				bottom: 300px;
+				width: 50%;
+			}
 			#banner h2 {
 				position: absolute;
 				bottom: 300px;
@@ -3514,6 +3556,11 @@ input, select, textarea {
 				height: 450px;
 			}
 
+			#banner h1 {
+				position: absolute;
+				bottom: 300px;
+				width: 50%;
+			}
 			#banner h2 {
 				position: absolute;
 				bottom: 300px;
@@ -3540,6 +3587,11 @@ input, select, textarea {
 					height: 120px;
 				}
 
+				#banner h1 {
+					position: absolute;
+					bottom: 150px;
+					width: 50%;
+				}
 				#banner h2 {
 					position: absolute;
 					bottom: 150px;
@@ -3568,6 +3620,12 @@ input, select, textarea {
 						font-size: 1.5em;
 					}
 
+				#banner h1 {
+					font-size: 1.5em;
+					position: absolute;
+					bottom: 50px;
+					width: 50%;
+				}
 				#banner h2 {
 					font-size: 1.5em;
 					position: absolute;
@@ -3592,6 +3650,17 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		body.is-preload #banner h1 {
+			opacity: 0;
+			-moz-transform: translateX(0.25em);
+			-webkit-transform: translateX(0.25em);
+			-ms-transform: translateX(0.25em);
+			transform: translateX(0.25em);
+			-moz-filter: blur(2px);
+			-webkit-filter: blur(2px);
+			-ms-filter: blur(2px);
+			filter: blur(2px);
+		}
 		body.is-preload #banner h2 {
 			opacity: 0;
 			-moz-transform: translateX(0.25em);
@@ -3625,6 +3694,13 @@ input, select, textarea {
 		#wrapper > header .inner {
 			margin: 0 auto;
 			width: 55em;
+		}
+
+		#wrapper > header h1 {
+			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			font-size: 2em;
+			margin-bottom: 0.8em;
+			padding-bottom: 0.4em;
 		}
 
 		#wrapper > header h2 {
@@ -3683,6 +3759,10 @@ input, select, textarea {
  125%;
 			margin-bottom: -2.5em;
 		}
+
+			#wrapper > header h1 {
+				font-size: 1.25em;
+			}
 
 			#wrapper > header h2 {
 				font-size: 1.25em;
