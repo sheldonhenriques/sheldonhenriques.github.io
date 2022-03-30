@@ -95,7 +95,8 @@
 			}, userConfig);
 
 			// Expand "target" if it's not a jQuery object already.
-				if (typeof config.target != 'jQuery')
+			console.log(typeof config.target)
+				if (typeof config.target != 'function')
 					config.target = $(config.target);
 
 		// Panel.
@@ -528,7 +529,7 @@
 		var key = '__prioritize';
 
 		// Expand $elements if it's not already a jQuery object.
-			if (typeof $elements != 'jQuery')
+			if (typeof $elements != 'function')
 				$elements = $($elements);
 
 		// Step through elements.
